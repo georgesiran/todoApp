@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-
+import TodoList from './components/TodoList'
 function iterateArray (arr){
   return arr.map((item)=>{
     return <li>{item.text}</li>
@@ -23,7 +23,7 @@ function App() {
   
   return (
     <div className="App">
-       {false? iterateArray(arr):iterateArrayCheckedOnly(arr)}
+      <TodoList></TodoList>
     </div>
   );
 }
